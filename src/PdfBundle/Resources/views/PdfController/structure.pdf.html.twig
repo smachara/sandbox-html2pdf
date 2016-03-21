@@ -1,0 +1,70 @@
+{% extends preview == 'true'
+? 'PdfBundle:Pdf:preview.html.twig'
+: 'PdfBundle:Pdf:print.pdf.twig'%}
+
+
+{% block header_ccs %}
+        table.header{
+            width: 100%;
+            height: 30mm;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td.logo{
+            text-align: center; vertical-align: middle;
+        }
+        img.logo{
+            height: 30mm;
+        }
+        td.qr{
+            text-align: center; vertical-align: middle;
+        }
+        img.qr{
+            height: 30mm;
+        }
+        td.data-logo{
+            text-align: left; vertical-align: middle;
+        }
+        td.season{
+            text-align: center; vertical-align: middle;
+        }
+        p.data-logo{
+            font-family: Arial;
+            font-size: 6pt;
+        }
+{% endblock %}
+
+{% block header %}
+    <table class="header" >
+        <tbody>
+        <tr>
+            <td class="logo">
+             <img class="logo" src="{% block logo_data %}{% endblock %}">
+            </td>
+            <td class="data-logo">
+                <p class="data-logo">{% block data_logo_data %}{% endblock %}</p>
+            </td>
+            <td class="qr">
+               {% block qr_data %}{% endblock %}
+            </td>
+            <td class="season">{% block season_data %}{% endblock %}</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block atention_ccs %}
+    .attention{
+        border-radius: 25px;
+        padding: 5px;
+        background-color: #ffcccc;
+        text-align: center;
+        vertical-align:middle;
+    }
+{% endblock %}
+
+{% block attention %}
+    <div class="attention">
+        {% block atention_data %}{% endblock %}
+    </div>
+{% endblock %}

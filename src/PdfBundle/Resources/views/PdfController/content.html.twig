@@ -1,0 +1,20 @@
+{% extends "PdfBundle:Pdf:structure.pdf.html.twig" %}
+
+{% block logo_data %}{{ asset('assets/print/images/logo-generico.jpg')}}{% endblock %}
+
+{% block data_logo_data %}
+        Company Name <br>
+        Slogan<br>
+        Address Line 1<br>
+        E-mail : admin@admin.com : www.company-name.com
+{% endblock %}
+
+{% block qr_data %}{{ qr | raw }}{% endblock %}
+
+{% block season_data %}
+    <h1>Form Type 1</h1>
+{% endblock %}
+
+{% block atention_data %}
+        <b> A T T E N T I O N : Important Information </b>
+{% endblock %}

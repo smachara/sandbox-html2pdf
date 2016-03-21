@@ -1,0 +1,31 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Preview document{% endblock %}
+{% block extra_stylesheets%}
+    <link href="{{ asset('assets/print/css/print_format.css') }}" rel="stylesheet" media="screen">
+    <style>
+        {% block header_ccs %}{% endblock %}
+        {% block atention_ccs %}{% endblock %}
+
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <a class="button" href="{{  path('pdf_print') }}">Print</a>
+    <page size="A4">
+        <div id="P1">
+            {% block header %}{% endblock %}
+            {% block attention%}{% endblock %}
+        </div>
+    </page>
+{% endblock %}
