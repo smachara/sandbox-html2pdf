@@ -67,3 +67,11 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+smachara_html2pdf:
+    orientation: P
+    format: A4
+    lang: en
+    unicode: true
+    encoding: UTF-8
+    margin: [10,15,10,15]
