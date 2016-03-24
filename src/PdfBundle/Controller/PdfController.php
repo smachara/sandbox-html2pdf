@@ -87,7 +87,7 @@ EOD;
 
 
        $response = new Response($pdf1->Output('test.pdf','D'));
-//        $response->headers->set('Content-Type', 'application/pdf');
+        //        $response->headers->set('Content-Type', 'application/pdf');
         return $response;
     }
 }

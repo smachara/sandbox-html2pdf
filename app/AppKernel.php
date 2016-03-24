@@ -17,7 +17,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
             new PdfBundle\PdfBundle(),
-            new smachara\html2pdfBundle\Tests\Controller\DefaultControllerTest(),
+            new smachara\Html2pdfBundle\smacharaHtml2pdfBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
