@@ -1198,16 +1198,16 @@
         },
         {
             "name": "smachara/html2pdfbundle",
-            "version": "v1.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smachara/html2pdfbundle.git",
-                "reference": "3c2a043dd619e3fd3e8bc29a257fb3c7db36779a"
+                "reference": "ebf64b0eae68aa1d31b353b7874501a064684055"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smachara/html2pdfBundle/zipball/3c2a043dd619e3fd3e8bc29a257fb3c7db36779a",
-                "reference": "3c2a043dd619e3fd3e8bc29a257fb3c7db36779a",
+                "url": "https://api.github.com/repos/smachara/html2pdfbundle/zipball/ebf64b0eae68aa1d31b353b7874501a064684055",
+                "reference": "ebf64b0eae68aa1d31b353b7874501a064684055",
                 "shasum": ""
             },
             "require": {
@@ -1217,7 +1217,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "smachara\\html2pdfBundle": ""
+                    "smachara\\html2pdfbundle": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1231,14 +1231,14 @@
                     "role": "Developer"
                 }
             ],
-            "description": "This is a Bundle to use the last version of spipu-Html2pdf as a service.",
+            "description": "=This is a Bundle to use the last version of spipu-Html2pdf as a service in Symfony2 applications. I did this bundle because 'ensepar/html2pdf-bundle' does not use the last versions of spipu-Html2pdf and TCPDF. The rest still the same.",
             "homepage": "http://SynfonyAventure.org/",
             "keywords": [
                 "html",
                 "html2pdf",
                 "pdf"
             ],
-            "time": "2016-03-23 12:28:00"
+            "time": "2016-03-24 13:12:51"
         },
         {
             "name": "spipu/html2pdf",
